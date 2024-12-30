@@ -1,0 +1,39 @@
+//INPUT
+CREATE TABLE Students (
+    StudentID int,
+    FirstName varchar(255),
+    LastName varchar(255),
+    Age varchar(255),
+    Marks varchar(255)
+);
+
+-- insert
+INSERT INTO Students VALUES (112,'Rajesh','Gupta',18,'568/600');
+INSERT INTO Students VALUES (132, 'Harish','Singh',19,'587/600');
+INSERT INTO Students VALUES (124,'Ratan','Srikaant',17, '578/600');
+
+
+SELECT StudentID FROM Students;
+SELECT DISTINCT Age FROM Students;
+SELECT COUNT(DISTINCT Age) FROM Students;
+SELECT * FROM Students WHERE FirstName='Rajesh';
+SELECT * FROM Students
+WHERE Marks='587/600';
+SELECT * FROM Students
+WHERE Age = 17;
+SELECT * FROM Students
+WHERE StudentID > 112;
+SELECT * FROM Students
+WHERE StudentID < 132;
+SELECT * FROM Students
+WHERE StudentID >= 124;
+SELECT * FROM Students
+WHERE StudentID <= 112;
+SELECT * FROM Students
+WHERE LastName='Rajesh' AND Marks='568/600';
+SELECT * FROM Students
+WHERE Marks='587/600' OR Marks='578/600';
+SELECT * FROM Students
+WHERE NOT Marks ='568/600';
+//OUTPUT
+a new student details column would be created
